@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #444;
+  color:white;
+  margin: 20px;
+  font: 32px 'Century Gothic' , Futura , sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+.board-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.square{
+  background-color: #444;
+  color: rgb(255, 255, 255);
+  border: 2px solid #999;
+  padding: 0;
+  font-size: 84px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.square:focus{
+  outline: none;
+  background-color: #000000be;
+
+}
+
+.status{
+  margin: 20px;
+  font-size: 24px;
+}
+.square.red {
+  color: red;
+}
+
+.square.blue {
+  color: blue;
+}
+
+
+
+
+.winner{
+  color: black;
 }
