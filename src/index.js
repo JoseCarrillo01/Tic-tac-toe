@@ -103,9 +103,11 @@ const Board = () => {
         style={modalStyle}
       >
         <div className="Background">
+          <div className="direccionButton">
           <button className="close-button" onClick={closeModal}>
             X
           </button>
+          </div>
           <h2 className="winner">
             {winner ? `Felicidades, ${winner} ha ganado!` : "Es un empate."}
           </h2>

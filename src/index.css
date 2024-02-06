@@ -113,3 +113,14 @@ button:hover .play {
   transform: translateX(200%);
   transition-delay: 300ms;
 }
+
+
+.direccionButton{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.close-button{
+  background-color: red;
+}
